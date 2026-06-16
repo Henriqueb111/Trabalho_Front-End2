@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Counter-Strike 2",
+    "descricao": "FPS competitivo focado em estratégia, precisão e trabalho em equipe.",
+    "appid": 730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
+    "generos": ["FPS", "Tirinho", "RPG"],
+    "genero": "FPS",
+    "valor_mercado": 299.9,
+    "desconto": 35,    
+    "qtd_downloads": 144000000,
+    "tags" : ["legal", "divertido", "animado", "colorido"]
+  },
+  {
+    "titulo": "Dota 2",
+    "descricao": "MOBA estratégico com heróis variados e partidas em equipe.",
+    "appid": 570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg",
+    "genero": "MOBA",
+    "valor_mercado": 59.99,
+    "desconto": 10,
+    "qtd_downloads": 12000000,
+    "generos": ["MOBA", "RPG", "Ação"],
+    "tags" : ["caro", "equipe", "animado"]
+  },
+  {
+    "titulo": "Team Fortress 2",
+    "descricao": "FPS multiplayer estilizado com classes e modos variados.",
+    "appid": 440,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg",
+    "genero": "FPS",
+    "generos": ["FPS", "Multiplayer", "Estilizado", "Ação"],
+    "valor_mercado": 199.9,
+    "desconto": 67,
+    "qtd_downloads": 30000000,
+    "tags" : ["daora", "animado", "equipe"]
+  },
+  {
+    "titulo": "Left 4 Dead 2",
+    "descricao": "Cooperativo de ação e sobrevivência contra hordas de zumbis.",
+    "appid": 550,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg",
+    "genero": "Sobrevivência",
+    "generos": ["Sobrevivência", "Cooperativo", "Ação", "Sobrevivência", "Zumbi"],
+    "valor_mercado": 19.99,
+    "desconto": 0,
+    "qtd_downloads": 40000000,
+    "tags" : ["terror", "equipe", "animado"]
+  }
+]

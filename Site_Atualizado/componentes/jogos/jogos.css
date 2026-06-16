@@ -1,0 +1,78 @@
+/* GAMES */
+
+.games {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.games h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.game-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #2a475e;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-img {
+    height: 150px;
+    background-color: #1b2838;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* DETALHES DO JOGO */
+
+.jogo {
+    
+    background: linear-gradient(to right, #1b2838, #0f1c2c);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.jogo-content {
+    min-width: 300px;
+    max-width: 80vw;
+    margin: 20px;
+    display: flex;    
+    
+}
+
+.jogo-info {
+    flex-grow: 2;
+}
+
+.jogo-imagem {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.jogo h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.jogo p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
