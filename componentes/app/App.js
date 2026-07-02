@@ -30,7 +30,7 @@ const rotas = {
     "/comunidade": {
         renderizar : function() {
             root.appendChild(criaHeader());
-            root.appendChild(Jogos.criaHero("Comunidade", "Participe da nossa comunidade! Fique por dentro das novidades e ganhe cupons de dez conto!"));
+            root.appendChild(Jogos.criaHero("Comunidade", "Este é o espaço onde pessoas se conectam, compartilham ideias, tiram dúvidas e colaboram para tornar nossa comunidade cada vez melhor. Sinta-se à vontade para participar das discussões, publicar conteúdos relevantes, ajudar outros membros e trocar experiências. Aqui, toda contribuição feita com respeito e educação é bem-vinda."));
             root.appendChild(criaFooter());
         }
     },
@@ -45,14 +45,21 @@ const rotas = {
     "/sobre": {
         renderizar : function() {
             root.appendChild(criaHeader());
-            root.appendChild(Jogos.criaHero("Sobre", "A STEAM é uma plataforma."));
+            root.appendChild(Jogos.criaHero("Sobre", "Nosso site foi criado com o objetivo de oferecer um ambiente moderno, acessível e colaborativo para todos os usuários. Acreditamos que a tecnologia pode aproximar pessoas, facilitar o compartilhamento de conhecimento e proporcionar uma experiência prática e agradável."));
             root.appendChild(criaFooter());
         }
     },
+    "/contato": {
+        renderizar : function() {
+            root.appendChild(criaHeader());
+            root.appendChild(Jogos.criaContato());
+        }
+    },
+
     "/instalar": {
         renderizar : function() {
             root.appendChild(criaHeader());
-            root.appendChild(Jogos.criaHero("Instalar", "Instale a STEAM em algum lugar, aqui não."));
+            root.appendChild(Jogos.criaHero("Instalar", "Instale a Steam em seu computador e tenha acesso a milhares de jogos, atualizações automáticas, recursos de comunidade e muito mais. Aproveite a experiência completa da plataforma e mergulhe no mundo dos games."));
             root.appendChild(criaFooter());
         }
     },
@@ -145,16 +152,22 @@ let criaHeader = () => {
     a4.textContent = "Sobre";
 
     const a5 = document.createElement("a");
-    a5.href = "/instalar";
+    a5.href = "/contato";
     a5.setAttribute("data-link", true);
-    a5.classList.add("btn-nav");
-    a5.textContent = "Instalar Steam";
+    a5.textContent = "Contato";
+
+    const a6 = document.createElement("a");
+    a6.href = "/instalar";
+    a6.setAttribute("data-link", true);
+    a6.classList.add("btn-nav");
+    a6.textContent = "Instalar Steam";
 
     nav.appendChild(a1);
     nav.appendChild(a2);
     nav.appendChild(a3);
     nav.appendChild(a4);
     nav.appendChild(a5);
+    nav.appendChild(a6);
 
     header.appendChild(nav);
 
@@ -168,24 +181,22 @@ let criaFooter = () => {
     const footer = document.createElement("footer");
 
     const p = document.createElement("p");
-    p.textContent = "milton vulgo bonilton";
+    p.textContent = "milton/miltin";
 
     footer.appendChild(p);
 
     return footer;
 }
 
+
 let paginaJogo = () => {
-    root.appendChild(criaHeader());
-    root.appendChild(Jogos.criaSecaoJogo("Red Dead Redemption II", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, sapiente voluptate laboriosam numquam suscipit blanditiis dolores ut magnam non, id doloremque est itaque. Nemo consequuntur magnam dolorum modi. Minima, mollitia.", "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg"));
-    root.appendChild(criaFooter());
+
 }
 
 let initApp = () => {
     root.appendChild(criaHeader());
     root.appendChild(Jogos.criaHero("Promoção de Verão Steam", "Milhares de jogos com até 90% de desconto. Não perca essa oportunidade!"));
     root.appendChild(Jogos.criaJogosDestaques());
-    root.appendChild(Jogos.criaContato());
     root.appendChild(criaFooter());
 }
 

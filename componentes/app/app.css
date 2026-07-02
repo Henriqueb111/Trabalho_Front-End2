@@ -92,9 +92,10 @@ nav a:hover {
 /* CONTACT */
 
 .contact {
-    padding: 60px 10%;
-    background-color: #171a21;
+    padding: 400px 10%;
+    background-color: #1b2835;
     text-align: center;
+    font-size: 30px;
 }
 
 .contact h2 {
@@ -109,7 +110,7 @@ form {
 }
 
 form input {
-    padding: 10px;
+    padding: 15px;
     width: 250px;
     border: none;
     border-radius: 4px;
@@ -119,7 +120,7 @@ form button {
     padding: 10px 20px;
     background-color: #5c7e10;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
 }
@@ -132,7 +133,7 @@ form button:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     background-color: #0f1c2c;
-    font-size: 14px;
+    font-size: 25px;
 }
