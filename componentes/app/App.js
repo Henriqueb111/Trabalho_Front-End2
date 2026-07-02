@@ -68,7 +68,6 @@ const rotas = {
             let jogo = Jogos.encontrarJogoPorAppid(id);
             root.appendChild(criaHeader());
             root.appendChild(Jogos.criaSecaoJogo(jogo.titulo, jogo.descricao, jogo.url_imagem));
-            root.appendChild(criaFooter());
 
         }
     }
